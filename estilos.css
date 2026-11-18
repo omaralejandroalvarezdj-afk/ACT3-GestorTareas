@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f7;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #243e60;
+}
+
+input[type="text"] {
+    padding: 9px;
+    margin: 8px 5px 8px 0;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#tarea {
+    width: 65%;
+}
+
+#buscar {
+    width: 100%;
+}
+
+button {
+    padding: 9px;
+    margin: 3px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #e9eef4;
+}
+
+button:hover {
+    background-color: #d3e1f0;
+}
+
+#mensaje {
+    color: #245d38;
+    min-height: 20px;
+}
+
+#contador {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.completada {
+    text-decoration: line-through;
+    color: gray;
+}
+
+@media (max-width: 480px) {
+    #tarea {
+        width: 100%;
+    }
+    li {
+        flex-wrap: wrap;
+    }
+}
